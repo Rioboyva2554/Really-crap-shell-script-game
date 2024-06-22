@@ -38,7 +38,7 @@ fi
 
 
 if [ $ACTION3 = "spare" ]; then
-echo "you left the moster alone and left"
+echo "you left the monster alone and left"
 
 
 elif [ $ACTION3 = "attack" ]; then
@@ -64,6 +64,18 @@ elif [ $ACTION2 = "flee" ]; then
 echo "sissy ending. lol you were afraid"
 
 fi
+
+echo "would you like to play the demo/beta sequel"
+read game
+
+if [ $game = "yes" ]; then
+./test2.sh
+
+elif ( $game = "no" ); then
+echo "ok"
+
+fi
+
 
 date
 exit
